@@ -48,7 +48,7 @@ public class readtext {
 				String eachLineString = strings.get(p);
 				String[] eachLineStringArray = eachLineString.split("\\s+");
 				
-                for (int q = 0; q < eachLineStringArray.length; q++) {
+				for (int q = 0; q < eachLineStringArray.length; q++) {
 					if (q == k) {
 						System.out.println(eachLineStringArray[q]);
 					}
@@ -64,6 +64,6 @@ public class readtext {
     	
 		readtext rt = new readtext();
 		rt.strings = rt.readTextFile(url);
-		rt.printTextFile(2, 4, 2);   //example: from 2rd row, jump each 4 row, get the 2rd column data
+		rt.printTextFile(2, 4, 2);   //example: from 2rd row, jump each 4 rows, get the 2rd column data
 	}
 }
