@@ -48,21 +48,22 @@ public class readtext {
 				String eachLineString = strings.get(p);
 				String[] eachLineStringArray = eachLineString.split("\\s+");
 				
-            for (int q = 0; q < eachLineStringArray.length; q++) {
-					       if (q == k) {
-						         ystem.out.println(eachLineStringArray[q]);
-					       }
-				    }
+                for (int q = 0; q < eachLineStringArray.length; q++) {
+					if (q == k) {
+						System.out.println(eachLineStringArray[q]);
+					}
+				}
 			}			
 		}
 	}
 	
 	
     public static void main(String[] args) {
-    	String url = "/Users/suokun/Desktop/a.log";    //url of your log file
+    	//log file url
+    	String url = "/Users/suokun/Desktop/a.log";
     	
 		readtext rt = new readtext();
 		rt.strings = rt.readTextFile(url);
-		rt.printTextFile(2, 4, 2);
+		rt.printTextFile(2, 4, 2);   //example: from 2rd row, jump each 4 row, get the 2rd column data
 	}
 }
